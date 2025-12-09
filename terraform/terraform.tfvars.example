@@ -1,0 +1,55 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and update with your values
+
+# ============================================================================
+# REQUIRED CONFIGURATION
+# ============================================================================
+
+# Your GCP Project ID
+project_id = "your-project-id-here"
+
+# ============================================================================
+# OPTIONAL CONFIGURATION (uncomment and modify as needed)
+# ============================================================================
+
+# --- Regional Configuration ---
+# region      = "us-central1"
+# zone        = "us-central1-a"
+# domain_name = "test.acmecorp.com"
+
+# --- SSL Certificate Paths ---
+# ssl_certificate_path = "../certs/cert.pem"
+# ssl_private_key_path = "../certs/key.pem"
+
+# --- Compute Instance Configuration ---
+# machine_type = "e2-micro"           # Options: e2-micro, e2-small, e2-medium, n1-standard-1, etc.
+# disk_image   = "debian-cloud/debian-11"
+# disk_size_gb = 10
+
+# --- Autoscaling Configuration ---
+# min_replicas            = 1         # Minimum number of instances
+# max_replicas            = 1         # Maximum number of instances (increase for auto-scaling)
+# cpu_utilization_target  = 0.6       # Target CPU utilization (0.0 to 1.0)
+# cooldown_period         = 60        # Cooldown period in seconds
+
+# --- MIG Update Policy ---
+# max_surge_fixed              = 3    # Max instances to create during update
+# max_unavailable_fixed        = 0    # Max instances unavailable during update
+# auto_healing_initial_delay_sec = 300 # Delay before auto-healing starts (seconds)
+
+# --- Health Check & Backend Configuration ---
+# health_check_port   = 80
+# backend_timeout_sec = 30
+
+# --- Network Configuration ---
+# network_name = "default"            # VPC network name
+
+# --- Resource Naming ---
+# resource_prefix = "web-server"      # Prefix for compute resources
+# project_name    = "pets"            # Name for load balancer resources
+
+# --- OS Patching Configuration ---
+# patch_schedule_timezone = "America/New_York"
+# patch_schedule_day      = "TUESDAY"  # MONDAY, TUESDAY, WEDNESDAY, etc.
+# patch_schedule_hour     = 2          # Hour of day (0-23)
+# patch_schedule_minute   = 0          # Minute of hour (0-59)
