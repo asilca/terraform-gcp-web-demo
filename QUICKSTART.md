@@ -41,7 +41,7 @@ cd ..
 mkdir -p certs
 openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem \
   -days 365 -nodes \
-  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.acmecorp.com"
+  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.example.com"
 ```
 
 ### 4. Deploy Infrastructure

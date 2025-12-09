@@ -15,7 +15,7 @@ project_id = "your-project-id-here"
 # --- Regional Configuration ---
 # region      = "us-central1"
 # zone        = "us-central1-a"
-# domain_name = "test.acmecorp.com"
+# domain_name = "test.example.com"
 
 # --- SSL Certificate Paths ---
 # ssl_certificate_path = "../certs/cert.pem"

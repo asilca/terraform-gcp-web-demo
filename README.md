@@ -186,7 +186,7 @@ Optional: Customize other variables (see [VARIABLES.md](VARIABLES.md) for full l
 project_id  = "your-actual-project-id"
 region      = "us-central1"
 zone        = "us-central1-a"
-domain_name = "test.acmecorp.com"
+domain_name = "test.example.com"
 
 # Autoscaling (increase max_replicas for production)
 min_replicas = 1
@@ -210,7 +210,7 @@ backend "gcs" {
 
 ### Step 3: SSL Certificates
 
-The included certificates in `certs/` are **dummy certificates** for `test.acmecorp.com` and are for demonstration purposes only.
+The included certificates in `certs/` are **dummy certificates** for `test.example.com` and are for demonstration purposes only.
 
 #### Option A: Create Your Own Self-Signed Certificates (Testing)
 
@@ -222,7 +222,7 @@ mkdir -p certs
 # Generate private key and certificate
 openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem \
   -days 365 -nodes \
-  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.acmecorp.com"
+  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.example.com"
 ```
 
 **Windows (PowerShell):**
@@ -233,7 +233,7 @@ openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem \
 mkdir certs -Force
 openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem `
   -days 365 -nodes `
-  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.acmecorp.com"
+  -subj "/C=US/ST=State/L=City/O=Organization/CN=test.example.com"
 ```
 
 #### Option B: Use Your Own Existing Certificates
