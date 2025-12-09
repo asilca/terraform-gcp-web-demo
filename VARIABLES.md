@@ -150,9 +150,7 @@ patch_schedule_hour     = 3
 patch_schedule_minute   = 30
 ```
 
-## What Was Parameterized
-
-Previously hardcoded values that are now configurable:
+## Parametrised Variables
 
 ### Compute Resources
 - ✅ Machine type (`e2-micro`)
